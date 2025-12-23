@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harshini M | Portfolio</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff;
+}
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.4);
+  z-index:1000;
+}
+
+nav ul{
+  display:flex;
+  justify-content:center;
+  list-style:none;
+  padding:15px;
+}
+
+nav ul li a{
+  color:#fff;
+  margin:0 18px;
+  text-decoration:none;
+  font-weight:500;
+  position:relative;
+}
+
+nav ul li a::after{
+  content:'';
+  position:absolute;
+  width:0;
+  height:2px;
+  background:#00e5ff;
+  left:0;
+  bottom:-5px;
+  transition:0.3s;
+}
+
+nav ul li a:hover::after{
+  width:100%;
+}
+
+/* HERO */
+header{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+}
+
+header h1{
+  font-size:3rem;
+  letter-spacing:2px;
+}
+
+header p{
+  margin-top:10px;
+  opacity:0.85;
+}
+
+/* SECTION */
+section{
+  max-width:1000px;
+  margin:60px auto;
+  padding:50px;
+  background: rgba(255,255,255,0.1);
+  border-radius:15px;
+  backdrop-filter: blur(15px);
+  animation:fadeUp 1s ease;
+}
+
+h2{
+  margin-bottom:20px;
+  color:#00e5ff;
+}
+
+/* SKILLS */
+.skills span{
+  display:inline-block;
+  padding:10px 18px;
+  margin:8px;
+  border-radius:25px;
+  background: rgba(255,255,255,0.15);
+  transition:0.3s;
+}
+
+.skills span:hover{
+  background:#00e5ff;
+  color:#000;
+}
+
+/* PROJECTS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.project{
+  padding:20px;
+  border-radius:12px;
+  background: rgba(255,255,255,0.12);
+  transition:0.4s;
+}
+
+.project:hover{
+  transform:translateY(-8px) scale(1.02);
+  background: rgba(0,229,255,0.3);
+}
+
+/* CONTACT */
+#contact p{
+  margin:10px 0;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  opacity:0.8;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  header h1{font-size:2.3rem;}
+  section{padding:30px;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#objective">Objective</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Harshini M</h1>
+  <p>Computer & Communication Engineering</p>
+  <p>Aspiring Data Analyst</p>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am Harshini M, a 3rd year Computer and Communication Engineering student with
+hands-on experience in Python, Power BI, and Excel through a Data Analyst
+internship. I am passionate about analyzing data and transforming insights
+into meaningful business decisions.
+</p>
+</section>
+
+<section id="objective">
+<h2>Career Objective</h2>
+<p>
+Motivated recent graduate seeking an entry-level Data Analyst position to
+utilize skills in Python and Power BI, gain hands-on industry experience,
+and contribute to data-driven decision-making while driving organizational success.
+</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+
+<h3 style="color:#00e5ff; margin-top:15px;">Technical Skills</h3>
+<div class="skills">
+  <span>Python</span>
+  <span>Power BI</span>
+  <span>Excel</span>
+  <span>Data Analysis</span>
+  <span>Data Visualization</span>
+  <span>Basic SQL</span>
+</div>
+
+<h3 style="color:#00e5ff; margin-top:30px;">Soft Skills</h3>
+<div class="skills">
+  <span>Communication</span>
+  <span>Problem Solving</span>
+  <span>Leadership</span>
+  <span>Teamwork</span>
+  <span>Time Management</span>
+  <span>Adaptability</span>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+<div class="project">
+<h3>Breast Cancer Prediction</h3>
+<p>Machine learning project using Python to predict cancer types.</p>
+</div>
+
+<div class="project">
+<h3>Password Strength Analysis</h3>
+<p>Security-focused Python application to evaluate passwords.</p>
+</div>
+
+<div class="project">
+<h3>Chatbot</h3>
+<p>Rule-based chatbot using Python with automated responses.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>📧 harshinimuthukumar66@gmail.com</p>
+<p>🐙 github.com/harshini940</p>
+<p>🔗 linkedin.com/in/harshini-m</p>
+</section>
+
+<footer>
+© 2025 Harshini M
+</footer>
+
+</body>
+</html>
